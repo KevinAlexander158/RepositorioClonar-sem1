@@ -1,2 +1,39 @@
 Hola, este es mi repositorio en GitHub.
 Primer commit de este archivo.
+Codigo :
+
+ublic class Usuario {
+    public int id;
+    public String nombre;
+    public String email;
+    
+    public Usuario (){}
+    public Usuario (int x, String y, String z){
+        this.id = x;
+        this.nombre =y;
+        this.email = z;
+    }
+    
+    public void setId(int x){
+        this.id = x;
+    }
+    public int getId(){
+        return this.id;
+    }
+    public void setNombre(String y){
+        this.nombre = y;
+    }
+    public String getNombre(){
+        return this.nombre;
+    }
+    public void setEmail(String correo){
+        this.email = correo;
+    }
+    public String getEmail(){
+        return this.email;
+    }
+
+    @Override
+    public String toString() {
+        return "Usuario{" + "id=" + this.getId() + ", nombre=" + this.getNombre() + ", email=" + this.getEmail() + '}';
+    }
